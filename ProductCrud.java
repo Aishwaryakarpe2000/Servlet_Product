@@ -11,7 +11,7 @@ public class ProductCrud {
 	{
 		//1.
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		//2.establish connection
+		//2.
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/prodservdb?user=root&password=root");
 		//3.
 		PreparedStatement ps=con.prepareStatement("insert into product values(?,?,?,?,?)");
