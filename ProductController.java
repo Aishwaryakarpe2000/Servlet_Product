@@ -48,14 +48,10 @@ protected void doPost(HttpServletRequest req, HttpServletResponse res) {
 			PrintWriter pw=res.getWriter();
 			if(result!=0)
 			{
-//				RequestDispatcher  rd =	req.getRequestDispatcher("Successful!");
-//      			rd.forward(req, res);
 				
 				pw.print("data inserted");
 			}
 			else {
-//               RequestDispatcher rd=req.getRequestDispatcher("Failed!");			
-//				rd.include(req, res);
 				
 				pw.print("data not inserted");
 			}
